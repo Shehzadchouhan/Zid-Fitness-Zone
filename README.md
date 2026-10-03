@@ -2,6 +2,8 @@
 
 ![ZID Fitness & Performance — gym brand visual](./bg.png)
 
+[**Visit the live site**](https://zid-fitness-zone.onrender.com)
+
 **A full-stack fitness club web application** with a public-facing member experience, member accounts, and a role-protected gym owner dashboard.
 
 Built with React, Vite, Tailwind CSS, and an Express API. The project demonstrates responsive UI development, authenticated workflows, REST API integration, file uploads, and lightweight data persistence.
