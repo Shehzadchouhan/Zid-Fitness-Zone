@@ -1,189 +1,189 @@
-# 🏋️‍♂️ SFZ: Shehzad Fitness Zone — Enterprise Gym & Human Performance Platform
+# ZID Fitness & Performance
 
-[![Node.js](https://img.shields.io/badge/Node.js-v20+-68a063.svg?style=flat&logo=node.js)](https://nodejs.org)
-[![React](https://img.shields.io/badge/React-19-61dafb.svg?style=flat&logo=react)](https://react.dev)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38bdf8.svg?style=flat&logo=tailwindcss)](https://tailwindcss.com)
-[![Express](https://img.shields.io/badge/Express-Backend-black.svg?style=flat&logo=express)](https://expressjs.com)
-[![License](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
+![ZID Fitness & Performance — gym brand visual](./bg.png)
 
-> **Commercial-Grade, Full-Stack Gym Management & Client Acquisition Web Application**  
-> Designed for **gym owners, personal training studios, and corporate portfolio demonstration**.
+**A full-stack fitness club web application** with a public-facing member experience, member accounts, and a role-protected gym owner dashboard.
 
----
+Built with React, Vite, Tailwind CSS, and an Express API. The project demonstrates responsive UI development, authenticated workflows, REST API integration, file uploads, and lightweight data persistence.
 
-## 🌟 Executive Summary
+> **Portfolio/demo notice:** Gym statistics, pricing, reviews, staff profiles, and contact details shown in the app are sample/configurable content. Confirm or replace them before presenting the site as a live business.
 
-**Shehzad Fitness Zone (SFZ)** elevates a simple gym landing page into a high-conversion, full-stack digital fitness ecosystem. It seamlessly bridges two essential worlds:
+## Project at a glance
 
-1. **The Member Experience**: A high-energy, dark-aesthetic portal with live booking, biometric calculators, transparent pricing, and instant digital VIP pass generation.
-2. **The Gym Owner CRM & Command Center**: A backoffice portal empowering gym managers to monitor live floor capacity, follow up with leads via 1-click WhatsApp automation, punch member attendance, track Monthly Recurring Revenue (MRR), and export sales pipelines to CSV.
+| | |
+| --- | --- |
+| **Client** | React 19, Vite 8, Tailwind CSS 4 |
+| **Server** | Node.js, Express 5 |
+| **Data** | JSON file store (`server/data/store.json`) |
+| **Authentication** | Signed bearer sessions; member and owner roles |
+| **Uploads** | Member progress photos (JPG, PNG, WebP; 5 MB limit) |
+| **Deployment** | Render full-stack service; static frontend preview also possible |
 
----
+## Features
 
-## ⚡ Core Capabilities & Real-World Use Cases
+### Public fitness experience
 
-### 1. 🎯 Member & Client Acquisition Portal
-* **High-Impact Athletic Hero**: Live status pill showing arena operational state, operating hours, real-time athlete count, and dual CTAs.
-* **Filterable Training Disciplines**: Hypertrophy & Bodybuilding, Spartan CrossFit, Olympic Powerlifting (1RM Peaking), Metabolic HIIT, Combat Boxing, and Restorative Mobility.
-* **Live Weekly Class Schedule**: Interactive timetable filterable by day (Mon–Sun) with live seat capacity bars (e.g. `17/20 spots booked`) and instant spot reservation modal.
-* **SFZ Multi-Tool Fitness Lab**:
-  * **Biometric BMI & Body Composition Engine**: Color-coded range gauge, ideal weight calculator, Deurenberg body fat % estimate, and coach's routine recommendations.
-  * **TDEE & Daily Macro Planner**: Mifflin-St Jeor formula calculating exact calorie targets (Fat Loss, Maintenance, Clean Bulk) and grams of Protein, Carbs, and Fats.
-  * **1-Rep Max (1RM) Peaking Benchmarks**: Brzycki formula estimator with complete working load percentage table (95% down to 70%).
-* **Transparent Tiered Pricing**:
-  * Monthly vs Annual toggle (with 25% discount logic).
-  * Silver Starter (₹1,499/mo), Gold Pro Athlete (₹2,499/mo - Featured), and Diamond Elite VIP (₹4,499/mo).
-  * Interactive checkout with promo coupon verification (`SFZFIRST`) and instant digital membership pass generation.
-* **Verified Proof & Transformations**: Before & after showcase cards with verified weight/muscle metrics, trainer quotes, and Google 4.9★ reviews.
-* **Integrated Lead Capture & Direct WhatsApp Concierge**: Instant routing of join requests and direct front-desk chat shortcuts.
+- Responsive fitness club landing page with training programs, membership plans, trainer profiles, transformation stories, amenities, and contact sections.
+- Interactive fitness calculators for body metrics, calorie/macronutrient targets, and estimated one-rep max.
+- Monthly and annual membership plan presentation with an enrollment flow.
+- Join and contact forms for capturing prospective-member inquiries.
 
----
+### Member experience
 
-### 2. 🛡️ Gym Owner & Staff Command Portal
-* **Live KPI Dashboard**:
-  * Total Active Members (482+) with 94.2% renewal rate.
-  * Today's Check-ins counter with real-time floor capacity meter (e.g. 28/60 athletes).
-  * Monthly Recurring Revenue (MRR) tracking with MoM growth velocity.
-  * Lead-to-member conversion analytics.
-* **Sales Pipeline & Lead CRM**:
-  * Status tracking: `New`, `Trial Scheduled`, `Contacted`, `Enrolled`, `Lost`.
-  * **One-Click WhatsApp Integration**: Pre-fills personalized client follow-up messages directly into WhatsApp Web/Mobile.
-  * **1-Click Member Conversion**: Promotes prospective trial leads directly into enrolled members.
-  * **CSV Data Export**: Single-click export of inquiries for marketing campaigns.
-* **Member Directory & Front-Desk Attendance**:
-  * Member ID lookup, assigned coach, and plan tier.
-  * **"Punch In" Attendance Simulation**: Records check-ins, updates attendance streaks, and logs live facility entries.
-* **Class Capacity Monitor**: Live tracking of bookings and roster occupancy across studio sessions.
+- Member registration, sign-in, and profile editing.
+- Personal progress history with optional weight/notes and progress-photo uploads.
+- Attendance streak and progress summaries in the member dashboard.
+- Member photos are served through authenticated API routes.
 
----
+### Owner dashboard
 
-## 🏗️ Architecture & Data Flow
+- Owner-only dashboard for reviewing leads, members, payments, classes, and business summary data.
+- Update lead statuses, convert leads to members, and export lead data as CSV.
+- Record member attendance and manually record membership payments.
+- Review member progress photos from owner-protected routes.
+
+### Backend and resilient preview
+
+- Express REST API serves the built frontend and API from one deployment.
+- The frontend API client has a browser `localStorage` fallback for preview/demo use when the API is unavailable; it is not a replacement for shared, durable production storage.
+- Class listing and capacity-based booking endpoints are available in the API.
+
+## User workflow
 
 ```mermaid
-flowchart TD
-    subgraph Client["Frontend (React 19 + Tailwind v4 + Vite)"]
-        UI["Public Member Interface"]
-        CRM["Gym Owner Command Portal"]
-        MODALS["Booking, Pass & Checkout Modals"]
-        API_SVC["src/services/api.js (Resilient Client)"]
-        LS["localStorage (Offline Resilience Cache)"]
-    end
-
-    subgraph Server["Backend (Node.js + Express REST API)"]
-        ROUTER["Express API Router (/api)"]
-        STORE["server/data/store.json (JSON Database)"]
-        CSV["CSV Report Generator"]
-    end
-
-    UI --> API_SVC
-    CRM --> API_SVC
-    MODALS --> API_SVC
-    API_SVC <-->|HTTP / REST| ROUTER
-    API_SVC -.->|Fallback if Offline| LS
-    ROUTER <--> STORE
-    ROUTER --> CSV
+flowchart LR
+    Visitor[Visitor] --> Explore[Explore programs and plans]
+    Explore --> Inquiry[Submit join or contact request]
+    Inquiry --> Lead[Lead saved by API]
+    Lead --> Owner[Owner reviews lead]
+    Owner --> FollowUp[Follow up and update status]
+    FollowUp --> Enroll[Enroll member / record payment]
+    Enroll --> Member[Member signs in]
+    Member --> Profile[Update profile and log progress]
+    Profile --> Review[Owner reviews member progress]
 ```
 
----
+## Application architecture
 
-## 📡 REST API Reference
-
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `GET` | `/api/health` | System health check and server timestamp |
-| `GET` | `/api/stats` | Live KPIs (MRR, check-ins, occupancy, conversion) |
-| `GET` | `/api/leads` | List leads (supports `?status=` and `?search=`) |
-| `POST` | `/api/leads` | Submit trial pass or membership application |
-| `PATCH`| `/api/leads/:id` | Update lead status (`contacted`, `enrolled`, etc.) |
-| `DELETE`| `/api/leads/:id` | Archive / remove lead |
-| `GET` | `/api/export/leads` | Export leads report as `.csv` download |
-| `GET` | `/api/members` | Directory of enrolled gym members |
-| `POST` | `/api/members` | Enroll new member manually |
-| `POST` | `/api/members/:id/checkin` | Record member attendance check-in |
-| `GET` | `/api/classes` | Weekly class timetable and seat capacity |
-| `POST` | `/api/classes/:id/book` | Reserve spot in a class |
-| `POST` | `/api/auth/register` | Create a member account |
-| `POST` | `/api/auth/login` | Sign in as a member or configured owner |
-| `GET` | `/api/auth/me` | Get the current authenticated account |
-| `GET` | `/api/member/profile` | Get the signed-in member's profile, streak, and progress history |
-| `PATCH` | `/api/member/profile` | Save the signed-in member's profile details |
-| `POST` | `/api/member/progress` | Upload a daily progress photo and optional weight/note |
-| `GET` | `/api/member/progress/:id/photo` | Retrieve one of the signed-in member's private photos |
-| `GET` | `/api/owner/accounts` | Owner-only registered account and progress summary |
-| `GET` | `/api/owner/accounts/:accountId/progress/:progressId/photo` | Owner-only retrieval of a member progress photo |
-| `GET` | `/api/payments` | Owner-only recorded payment history |
-| `PATCH` | `/api/leads/:id/payment` | Record a pending membership fee and activate the member |
-
-Owner CRM endpoints require an authenticated owner session. Member registration always creates a member account; owner accounts are provisioned only through server environment variables.
-Progress photos accept JPG, PNG, or WebP files up to 5 MB and are stored in `server/uploads/`, which is excluded from Git. A member can add one photo entry per UTC day; only their own authenticated account can retrieve those images.
-Membership plan requests stay pending until the owner records payment. The owner portal's WhatsApp reminder opens a prefilled message for manual sending; it does not send messages automatically. This app does not process online payments.
-
----
-
-## 🚀 Quickstart & Local Setup
-
-### Prerequisites
-* **Node.js** (v18 or higher recommended)
-* **npm** (v9 or higher)
-
-### 1. Clone & Navigate
-```bash
-cd sfz-fitness-platform
+```mermaid
+flowchart LR
+    Browser[React + Vite client] --> ClientAPI[src/services/api.js]
+    ClientAPI -->|HTTP /api| Express[Express server]
+    ClientAPI -.->|Preview fallback| BrowserStorage[Browser localStorage]
+    Express --> Store[JSON data store]
+    Express --> Photos[Local progress-photo uploads]
+    Express --> Static[Built frontend in dist]
 ```
 
-### 2. Install Dependencies
-```bash
-npm install
-```
+## Local development
 
-### 3. Run Development Environment
-Create a local environment file and fill in the owner email, a strong owner password, and a long random signing secret. `.env` is ignored by Git.
+### Requirements
 
-PowerShell:
+- Node.js **20.19+** or **22.12+**
+- npm
+
+### Install and configure
+
 ```powershell
+npm install
 Copy-Item .env.example .env
+```
+
+Set the following values in `.env` before using the owner account:
+
+```dotenv
+OWNER_NAME=Your Gym Name
+OWNER_EMAIL=owner@example.com
+OWNER_PASSWORD=use-a-unique-strong-password
+AUTH_SECRET=paste-a-long-random-secret-here
+```
+
+Generate a signing secret in PowerShell:
+
+```powershell
 node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
-# Paste the generated value into AUTH_SECRET in .env, and set OWNER_EMAIL and OWNER_PASSWORD there.
+```
+
+Keep `.env` private. It is excluded from Git; commit `.env.example` only.
+
+### Run the app
+
+Start both the Vite development server and Express API:
+
+```powershell
 npm run dev:all
 ```
 
-The owner account is unavailable until `OWNER_EMAIL` and `OWNER_PASSWORD` are set. Visitors can create member accounts from **Sign in** in the site navigation.
+- Frontend: `http://localhost:5173`
+- API: `http://localhost:5000`
 
-You can launch both the frontend and backend concurrently with one command:
-```bash
-npm run dev:all
-```
-* **Frontend**: `http://localhost:5173`
-* **Express API Server**: `http://localhost:5000`
+Or start them separately in two terminals:
 
-Or run them individually:
-```bash
-# Terminal 1: Backend Server
+```powershell
 npm run server
-
-# Terminal 2: React Frontend
 npm run dev
 ```
 
-### 4. Build for Production
-```bash
+### Build and serve
+
+```powershell
 npm run build
+npm start
 ```
-Creates an optimized production bundle inside `dist/`.
 
----
+The Express server serves the compiled app from `dist/` when the build exists.
 
-## 🌐 Production Deployment Options
+## API overview
 
-1. **Vercel / Netlify**: Deploy the `dist/` directory directly for static hosting. The built-in resilient API client will automatically fall back to browser `localStorage`, ensuring 100% functionality even without a dedicated Node backend.
-2. **Render / Railway / Fly.io**: Deploy as a unified full-stack Node.js app using `npm run build` and `npm start`.
-3. **Docker**: Package the container with Node 20 alpine to run both static file serving and the Express API.
+| Method | Endpoint | Access | Purpose |
+| --- | --- | --- | --- |
+| `GET` | `/api/health` | Public | Health check |
+| `POST` | `/api/leads` | Public | Submit a lead/inquiry |
+| `GET` | `/api/classes` | Public | List classes and capacity |
+| `POST` | `/api/classes/:id/book` | Public | Book an available class spot |
+| `POST` | `/api/auth/register` | Public | Register a member |
+| `POST` | `/api/auth/login` | Public | Sign in |
+| `GET` | `/api/member/profile` | Member | Read member profile and progress |
+| `PATCH` | `/api/member/profile` | Member | Update profile |
+| `POST` | `/api/member/progress` | Member | Add progress entry/photo |
+| `GET` | `/api/stats`, `/api/leads`, `/api/members`, `/api/payments` | Owner | Read dashboard data |
+| `PATCH` | `/api/leads/:id` | Owner | Update a lead |
+| `PATCH` | `/api/leads/:id/payment` | Owner | Record payment and activate membership |
+| `GET` | `/api/export/leads` | Owner | Download leads as CSV |
+| `POST` | `/api/members/:id/checkin` | Owner | Record member attendance |
 
----
+Owner endpoints require an authenticated owner account configured through environment variables. The app records payments but **does not process online payments**.
 
-## 👨‍💻 Author & Credits
+## Deployment
 
-* **Developer & Founder**: **Mohd. Shehzad**
-* **GitHub**: [@ShehzadChouhan](https://github.com/ShehzadChouhan)
-* **Brand**: **Shehzad Fitness Zone (SFZ)**, Ludhiana, Punjab
-* **Tagline**: *Unleash Your Highest Potential*
+For a full-stack deployment, connect the repository to Render and use:
+
+- **Build command:** `npm install && npm run build`
+- **Start command:** `npm start`
+- **Environment:** configure `OWNER_NAME`, `OWNER_EMAIL`, `OWNER_PASSWORD`, and a strong `AUTH_SECRET`
+
+The repository includes a Render Blueprint at [`render.yaml`](./render.yaml) and more deployment notes in [`DEPLOYMENT.md`](./DEPLOYMENT.md). Replace the example owner credentials in the Blueprint with secure deployment secrets before deploying.
+
+### Production considerations
+
+The current backend stores records in a JSON file and uploaded photos on the local filesystem. For production, configure durable persistent storage and backups for both, or migrate to a managed database and object storage. Also use a stable `AUTH_SECRET`, HTTPS, and real verified business content. Do not rely on browser fallback data for shared member or owner records.
+
+## Project structure
+
+```text
+src/
+  components/       Public sections, modals, member and owner dashboards
+  data/             Fitness club content and plan data
+  services/api.js   Frontend API client and preview fallback
+server/
+  index.js          Express API and static frontend serving
+  data/             JSON data store
+  uploads/          Member progress photos (ignored by Git)
+shared/             Shared utilities
+```
+
+## Resume / portfolio summary
+
+> Designed and built a responsive full-stack fitness platform featuring a React member interface, Express REST API, role-based member/owner workflows, progress-photo uploads, lead and attendance management, and deployment configuration.
+
+**Author:** Mohd. Shehzad · [GitHub](https://github.com/ShehzadChouhan)
