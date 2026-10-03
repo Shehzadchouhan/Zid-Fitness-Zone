@@ -1,0 +1,451 @@
+{
+  "stats": {
+    "totalMembers": 483,
+    "activeToday": 75,
+    "currentFloorOccupancy": 29,
+    "maxFloorCapacity": 60,
+    "monthlyRevenue": 685000,
+    "monthlyRevenueGrowth": 14.5,
+    "conversionRate": 36.8,
+    "renewalRate": 94.2
+  },
+  "leads": [
+    {
+      "id": "lead-1790925768276",
+      "name": "muskan",
+      "phone": "+919988059285",
+      "email": "",
+      "age": 24,
+      "gender": "male",
+      "locality": "Ludhiana Central",
+      "goal": "Free 1-Day Trial Pass",
+      "planInterest": "Gold Pro",
+      "membershipRequest": null,
+      "timePreference": "Morning (6:00 AM - 7:30 AM)",
+      "status": "new",
+      "source": "Free Pass Modal",
+      "createdAt": "2026-10-02T07:22:48.276Z",
+      "notes": "Submitted via SFZ Web Portal"
+    },
+    {
+      "id": "lead-1790925700247",
+      "name": "mohd",
+      "phone": "+919988059285",
+      "email": "",
+      "age": 24,
+      "gender": "male",
+      "locality": "Ludhiana Central",
+      "goal": "Free 1-Day Trial Pass",
+      "planInterest": "Gold Pro",
+      "membershipRequest": null,
+      "timePreference": "Morning (6:00 AM - 7:30 AM)",
+      "status": "new",
+      "source": "Free Pass Modal",
+      "createdAt": "2026-10-02T07:21:40.247Z",
+      "notes": "Submitted via SFZ Web Portal"
+    },
+    {
+      "id": "lead-1790925398914",
+      "name": "sh",
+      "phone": "+919988059285",
+      "email": "",
+      "age": 24,
+      "gender": "male",
+      "locality": "Ludhiana Central",
+      "goal": "Free 1-Day Trial Pass",
+      "planInterest": "Gold Pro",
+      "membershipRequest": null,
+      "timePreference": "Morning (6:00 AM - 7:30 AM)",
+      "status": "new",
+      "source": "Free Pass Modal",
+      "createdAt": "2026-10-02T07:16:38.914Z",
+      "notes": "Submitted via SFZ Web Portal"
+    },
+    {
+      "id": "lead-1790923345163",
+      "name": "shehzad",
+      "phone": "+919988059285",
+      "email": "",
+      "age": 24,
+      "gender": "male",
+      "locality": "Ludhiana Central",
+      "goal": "Free 1-Day Trial Pass",
+      "planInterest": "Gold Pro",
+      "timePreference": "Night (7:30 PM - 9:00 PM)",
+      "status": "new",
+      "source": "Free Pass Modal",
+      "createdAt": "2026-10-02T06:42:25.163Z",
+      "notes": "Submitted via SFZ Web Portal"
+    },
+    {
+      "id": "lead-1790923136244",
+      "name": "sheh",
+      "phone": "+919988059285",
+      "email": "",
+      "age": 24,
+      "gender": "male",
+      "locality": "Ludhiana Central",
+      "goal": "Program Enrollment: Spartan CrossFit & Conditioning",
+      "planInterest": "Gold Pro",
+      "timePreference": "Morning (6:00 AM - 7:30 AM)",
+      "status": "new",
+      "source": "Free Pass Modal",
+      "createdAt": "2026-10-02T06:38:56.244Z",
+      "notes": "Submitted via SFZ Web Portal"
+    },
+    {
+      "id": "lead-1790922639710",
+      "name": "sheh",
+      "phone": "879898443",
+      "email": "",
+      "age": 24,
+      "gender": "male",
+      "locality": "Ludhiana Central",
+      "goal": "Free 1-Day Trial Pass",
+      "planInterest": "Gold Pro",
+      "timePreference": "Morning (6:00 AM - 7:30 AM)",
+      "status": "new",
+      "source": "Free Pass Modal",
+      "createdAt": "2026-10-02T06:30:39.710Z",
+      "notes": "Submitted via SFZ Web Portal"
+    },
+    {
+      "id": "lead-101",
+      "name": "Amanpreet Singh",
+      "email": "aman.singh88@gmail.com",
+      "phone": "+91 98140 23456",
+      "age": 26,
+      "gender": "male",
+      "locality": "Model Town, Ludhiana",
+      "goal": "Muscle Building & Hypertrophy",
+      "planInterest": "Gold Pro",
+      "timePreference": "Evening (6:00 PM - 8:00 PM)",
+      "status": "new",
+      "source": "Website Join Form",
+      "createdAt": "2026-09-30T10:15:00.000Z",
+      "notes": "Interested in 1-on-1 personal training with Head Coach Shehzad."
+    },
+    {
+      "id": "lead-102",
+      "name": "Priya Sharma",
+      "email": "priyasharma.fit@yahoo.com",
+      "phone": "+91 98722 89012",
+      "age": 24,
+      "gender": "female",
+      "locality": "Sarabha Nagar, Ludhiana",
+      "goal": "Weight Loss & HIIT",
+      "planInterest": "Diamond Elite",
+      "timePreference": "Morning (6:30 AM - 8:00 AM)",
+      "status": "trial_scheduled",
+      "source": "Free Trial Modal",
+      "createdAt": "2026-09-29T14:30:00.000Z",
+      "notes": "Trial pass booked for Thursday 7:00 AM HIIT class."
+    },
+    {
+      "id": "lead-103",
+      "name": "Harinder Dhillon",
+      "email": "harinder.dhillon@outlook.com",
+      "phone": "+91 98881 55678",
+      "age": 31,
+      "gender": "male",
+      "locality": "BRS Nagar, Ludhiana",
+      "goal": "Powerlifting & Strength",
+      "planInterest": "Gold Pro",
+      "timePreference": "Night (8:00 PM - 10:00 PM)",
+      "status": "contacted",
+      "source": "Website Join Form",
+      "createdAt": "2026-09-28T18:45:00.000Z",
+      "notes": "Discussed deadlift platform availability. Sent pricing brochure on WhatsApp."
+    },
+    {
+      "id": "lead-104",
+      "name": "Jasleen Kaur",
+      "email": "jasleen.kaur94@gmail.com",
+      "phone": "+91 97810 65432",
+      "age": 29,
+      "gender": "female",
+      "locality": "Pakhowal Road, Ludhiana",
+      "goal": "Flexibility & Posture Rehabilitation",
+      "planInterest": "Silver Starter",
+      "timePreference": "Afternoon (11:00 AM - 1:00 PM)",
+      "status": "enrolled",
+      "source": "Direct Walk-in / Contact",
+      "createdAt": "2026-09-27T11:20:00.000Z",
+      "notes": "Enrolled in 6-month Gold plan with Diet consultation."
+    },
+    {
+      "id": "lead-105",
+      "name": "Vikram Sethi",
+      "email": "vikram.sethi@gmail.com",
+      "phone": "+91 99150 44321",
+      "age": 35,
+      "gender": "male",
+      "locality": "Civil Lines, Ludhiana",
+      "goal": "Cardio & Stamina Endurance",
+      "planInterest": "Gold Pro",
+      "timePreference": "Morning (6:00 AM - 7:30 AM)",
+      "status": "enrolled",
+      "source": "Website Calculator Lead",
+      "createdAt": "2026-09-30T17:40:00.000Z",
+      "notes": "Calculated BMI (28.4 Overweight). Requested fat loss roadmap.",
+      "updatedAt": "2026-09-30T17:39:31.718Z"
+    }
+  ],
+  "members": [
+    {
+      "id": "SFZ-006",
+      "name": "Vikram Sethi",
+      "phone": "+91 99150 44321",
+      "email": "vikram.sethi@gmail.com",
+      "plan": "Gold Pro",
+      "status": "active",
+      "joinDate": "2026-09-30",
+      "expiryDate": "2027-09-30",
+      "checkinCount": 1,
+      "lastCheckin": "2026-09-30T17:39:31.693Z",
+      "streak": 1,
+      "trainerAssigned": "Mohd. Shehzad"
+    },
+    {
+      "id": "SFZ-001",
+      "name": "Mohit Varma",
+      "phone": "+91 98155 11223",
+      "email": "mohit.varma@gmail.com",
+      "plan": "Diamond Elite",
+      "status": "active",
+      "joinDate": "2025-11-15",
+      "expiryDate": "2026-11-15",
+      "checkinCount": 185,
+      "lastCheckin": "2026-09-30T13:58:24.026Z",
+      "streak": 6,
+      "trainerAssigned": "Mohd. Shehzad"
+    },
+    {
+      "id": "SFZ-002",
+      "name": "Simran Gill",
+      "phone": "+91 98765 99887",
+      "email": "simran.gill@gmail.com",
+      "plan": "Gold Pro",
+      "status": "active",
+      "joinDate": "2026-01-10",
+      "expiryDate": "2027-01-10",
+      "checkinCount": 142,
+      "lastCheckin": "2026-09-30T08:30:00.000Z",
+      "streak": 3,
+      "trainerAssigned": "Simran Kaur"
+    },
+    {
+      "id": "SFZ-003",
+      "name": "Rajiv Khanna",
+      "phone": "+91 98880 77665",
+      "email": "rajiv.khanna@bizcorp.in",
+      "plan": "Silver Starter",
+      "status": "active",
+      "joinDate": "2026-04-01",
+      "expiryDate": "2026-10-01",
+      "checkinCount": 68,
+      "lastCheckin": "2026-09-29T18:10:00.000Z",
+      "streak": 1,
+      "trainerAssigned": "Gurpreet Singh"
+    },
+    {
+      "id": "SFZ-004",
+      "name": "Navneet Sandhu",
+      "phone": "+91 99144 33221",
+      "email": "navneet.sandhu@gmail.com",
+      "plan": "Gold Pro",
+      "status": "active",
+      "joinDate": "2025-08-20",
+      "expiryDate": "2026-10-20",
+      "checkinCount": 210,
+      "lastCheckin": "2026-09-30T06:45:00.000Z",
+      "streak": 12,
+      "trainerAssigned": "Rohit Verma"
+    },
+    {
+      "id": "SFZ-005",
+      "name": "Ananya Rajput",
+      "phone": "+91 97790 88123",
+      "email": "ananya.rajput@gmail.com",
+      "plan": "Diamond Elite",
+      "status": "active",
+      "joinDate": "2026-06-15",
+      "expiryDate": "2027-06-15",
+      "checkinCount": 78,
+      "lastCheckin": "2026-09-30T09:10:00.000Z",
+      "streak": 4,
+      "trainerAssigned": "Mohd. Shehzad"
+    }
+  ],
+  "classes": [
+    {
+      "id": "cls-1",
+      "title": "SFZ Spartan CrossFit",
+      "category": "CrossFit",
+      "time": "06:30 AM - 07:30 AM",
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "instructor": "Gurpreet Singh",
+      "capacity": 20,
+      "enrolled": 17,
+      "intensity": "High",
+      "calories": "650-800 kcal",
+      "level": "Intermediate / Advanced",
+      "description": "Functional Olympic lifting complexes, kettlebell circuits, rope climbs, and max anaerobic capacity."
+    },
+    {
+      "id": "cls-2",
+      "title": "Hypertrophy Beast Iron Club",
+      "category": "Strength",
+      "time": "07:30 AM - 08:30 AM",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "instructor": "Mohd. Shehzad",
+      "capacity": 15,
+      "enrolled": 14,
+      "intensity": "High",
+      "calories": "500-650 kcal",
+      "level": "All Levels",
+      "description": "Progressive overload barbell training focusing on chest, delts, back, and compound strength foundations."
+    },
+    {
+      "id": "cls-3",
+      "title": "Metabolic HIIT & Calorie Melt",
+      "category": "HIIT",
+      "time": "06:00 PM - 07:00 PM",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "instructor": "Simran Kaur",
+      "capacity": 25,
+      "enrolled": 21,
+      "intensity": "Extreme",
+      "calories": "700-900 kcal",
+      "level": "All Levels",
+      "description": "Explosive plyometrics, ski-erg, assault bikes, battle ropes, and athletic agility drills."
+    },
+    {
+      "id": "cls-4",
+      "title": "Combat Boxing & Core Shred",
+      "category": "Combat",
+      "time": "07:00 PM - 08:00 PM",
+      "days": [
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "instructor": "Rohit Verma",
+      "capacity": 18,
+      "enrolled": 15,
+      "intensity": "High",
+      "calories": "600-750 kcal",
+      "level": "Beginner to Advanced",
+      "description": "Heavy bag combos, speed drills, shadow boxing, footwork, and isometric core conditioning."
+    },
+    {
+      "id": "cls-5",
+      "title": "Olympic Power & Squat Clinic",
+      "category": "Powerlifting",
+      "time": "08:00 PM - 09:00 PM",
+      "days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "instructor": "Mohd. Shehzad",
+      "capacity": 12,
+      "enrolled": 10,
+      "intensity": "Max Strength",
+      "calories": "450-550 kcal",
+      "level": "Intermediate",
+      "description": "Biomechanics deep dive, bar path optimization, chalk-and-iron 1RM peaking cycles."
+    },
+    {
+      "id": "cls-6",
+      "title": "Mobility, Yoga & Spinal Decompression",
+      "category": "Yoga",
+      "time": "08:00 AM - 09:00 AM",
+      "days": [
+        "Saturday",
+        "Sunday"
+      ],
+      "instructor": "Simran Kaur",
+      "capacity": 20,
+      "enrolled": 13,
+      "intensity": "Moderate",
+      "calories": "250-350 kcal",
+      "level": "All Levels",
+      "description": "Hip openers, thoracic spine articulation, active dynamic stretching, and breathwork recovery."
+    }
+  ],
+  "recentCheckins": [
+    {
+      "id": "chk-1790776704026",
+      "memberName": "Mohit Varma",
+      "plan": "Diamond Elite",
+      "time": "Just now",
+      "timestamp": "2026-09-30T13:58:24.026Z"
+    },
+    {
+      "id": "chk-1",
+      "memberName": "Mohit Varma",
+      "plan": "Diamond Elite",
+      "time": "Just now",
+      "timestamp": "2026-09-30T13:30:00Z"
+    },
+    {
+      "id": "chk-2",
+      "memberName": "Ananya Rajput",
+      "plan": "Diamond Elite",
+      "time": "12 mins ago",
+      "timestamp": "2026-09-30T13:18:00Z"
+    },
+    {
+      "id": "chk-3",
+      "memberName": "Simran Gill",
+      "plan": "Gold Pro",
+      "time": "35 mins ago",
+      "timestamp": "2026-09-30T12:55:00Z"
+    },
+    {
+      "id": "chk-4",
+      "memberName": "Navneet Sandhu",
+      "plan": "Gold Pro",
+      "time": "1 hour ago",
+      "timestamp": "2026-09-30T12:30:00Z"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "user-c5b9c98f-9ad7-4e74-bcba-90448f7a2ac4",
+      "name": "Mohammad Shehzad",
+      "email": "shehzadchouhan260@gmail.com",
+      "role": "member",
+      "salt": "6641087023c66965bfc639c75298c68a",
+      "passwordHash": "a565d106d811710d968aec0ec8cd94a0d9c1ee696f43f7f25e326132dacb3b5084a32ea8bd4071ae46c04d736d7d2ea82ce1be14906efc4f77036dc91360504d",
+      "createdAt": "2026-10-02T06:09:53.828Z",
+      "progress": [
+        {
+          "id": "progress-9d665f6b-4752-4ff3-afb1-dc30723dfc7b",
+          "date": "2026-10-03",
+          "filename": "caf64c2a-5d29-46b9-87fa-7d22ce832514.jpg",
+          "note": "",
+          "weightKg": null,
+          "createdAt": "2026-10-03T03:56:55.261Z"
+        }
+      ],
+      "longestStreak": 1
+    }
+  ],
+  "payments": []
+}

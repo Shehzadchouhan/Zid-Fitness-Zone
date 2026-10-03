@@ -1,0 +1,17 @@
+{
+  "name": "ZID Fitness & Performance",
+  "short_name": "ZID",
+  "description": "Premium fitness club, performance coaching, and transformation studio in Ludhiana.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0b0e",
+  "theme_color": "#0a0b0e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

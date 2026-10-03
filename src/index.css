@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-bebas: 'Bebas Neue', cursive, sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+  }
+
+  body {
+    background-color: #0a0b0e;
+    color: #f1f5f9;
+    font-family: var(--font-poppins);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .bebas-title {
+    font-family: var(--font-bebas);
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Custom Utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.25);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 0 40px rgba(245, 158, 11, 0.4);
+}
+
+.glass-card {
+  background: rgba(18, 20, 26, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.35);
+  box-shadow: 0 12px 30px -10px rgba(245, 158, 11, 0.15);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0b0e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232733;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* Pulse Animation */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s infinite ease-in-out;
+}
+
+.zid-wordmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.zid-wordmark__text {
+  display: block;
+  font-family: 'Arial Black', 'Montserrat', sans-serif;
+  font-size: clamp(2.6rem, 4vw, 5.2rem);
+  line-height: 0.78;
+  letter-spacing: -0.12em;
+  font-weight: 900;
+  color: #f8fafc;
+  text-transform: uppercase;
+  transform: skewX(-10deg);
+  text-shadow: 0 10px 18px rgba(255, 255, 255, 0.08);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.08));
+}
+
+.zid-wordmark--compact .zid-wordmark__text {
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  letter-spacing: -0.09em;
+}
+
+.zid-logo-lockup {
+  display: grid;
+  place-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.zid-logo-lockup__word {
+  position: relative;
+  display: inline-block;
+  font-family: 'Arial Black', 'Montserrat', sans-serif;
+  font-size: clamp(7rem, 17vw, 23rem);
+  line-height: 0.7;
+  letter-spacing: -0.13em;
+  font-weight: 900;
+  color: #f8fafc;
+  text-transform: uppercase;
+  transform: skewX(-10deg);
+  text-shadow: 0 18px 26px rgba(255, 255, 255, 0.12);
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.08));
+}
+
+.zid-logo-lockup__word::before {
+  content: 'ZID';
+  position: absolute;
+  inset: 0;
+  color: rgba(10, 11, 14, 0.98);
+  transform: translate(0.06em, 0.05em) scale(1.05);
+  z-index: -1;
+  opacity: 0.92;
+}
+
+.zid-logo-lockup__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  color: #f8fafc;
+  text-transform: uppercase;
+}
+
+.zid-logo-lockup__meta-line {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
+  letter-spacing: 0.22em;
+  line-height: 1;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.zid-logo-lockup__meta-line--accent {
+  color: #f59e0b;
+  letter-spacing: 0.18em;
+}

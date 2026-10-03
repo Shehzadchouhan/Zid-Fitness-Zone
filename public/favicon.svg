@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="ZID favicon">
+  <rect width="256" height="256" fill="#050505"/>
+  <path fill="#F4F1EC" d="M42 52h169l-92 94h87v22H80l91-92H52v-24z"/>
+  <path fill="#F4F1EC" d="M42 142h165l-58 62H82l80-62H42v-24z"/>
+  <path fill="#F4F1EC" d="M168 202H42v-24h128l-78-76H42v-24h122l105 99v23H168z" opacity="0.96"/>
+  <rect x="28" y="176" width="160" height="18" rx="9" fill="#F59E0B"/>
+</svg>
